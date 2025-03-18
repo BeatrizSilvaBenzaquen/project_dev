@@ -8,7 +8,7 @@ export default function MainPage() {
     const [submitted, setSubmitted] = useState<boolean>(false)
 
     const onChangeMail = (event: React.ChangeEvent<HTMLInputElement>) => {
-        setMailValue(event.target)
+        setMailValue(event.target.value);
     }
     useEffect(() => {
         if (mailValue != "") {
